@@ -4,7 +4,7 @@ import Skills from "../Skills";
 import Experience from "../Experience";
 import Education from "../Education";
 const MyTabs = () => {
-
+   const tabLabels = ["Skills", "Experience", "Education"];
   const [mode, setMode] = useState("top");
 
   const handleModeChange = (e) => {
@@ -25,27 +25,22 @@ const MyTabs = () => {
         <Radio.Button value="left">Vertical</Radio.Button>
       </Radio.Group>
       <Tabs
-        defaultActiveKey="1"
-        tabPosition={mode}
-        style={{
-        //   height: 220,
-        }}
-        items={new Array(4).fill(null).map((_, i) => {
-          const id = String(i);
-          return {
-            label: `Tab-${ Number(id)+1}`,
-            key: id,
-            disabled: i === 3,
-            children: (() => {
-                if (id === "0") return <Skills/>;
-                if (id === "1") return  <Experience/> ;
-                if (id === "2") return  <Education/> ;
-                return `Content of tab ${Number(id)}`;
-              })(),
-              // children: `Content of tab ${ Number(id) + 1}`,
-          };
-        })}
-      />
+      defaultActiveKey="0"
+      tabPosition={mode}
+      items={tabLabels.map((label, i) => {
+        return {
+          label, 
+          key: String(i),
+          disabled: i === 3, // If you have a fourth tab to disable
+          children: (() => {
+            if (i === 0) return <Skills />;
+            if (i === 1) return <Experience />;
+            if (i === 2) return <Education />;
+            return `Content of tab ${i}`;        // Fallback (if needed)
+          })(),
+        };
+      })}
+    />
     </div>
   );
 };
