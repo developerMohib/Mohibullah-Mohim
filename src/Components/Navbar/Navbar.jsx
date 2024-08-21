@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import logo from "../../assets/devmohib.png";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -10,7 +12,7 @@ const Navbar = () => {
             <a href="#">
               <img
                 className="w-auto h-6 sm:h-7"
-                src="https://merakiui.com/images/full-logo.svg"
+                src={logo}
                 alt="Logo"
               />
             </a>

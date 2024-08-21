@@ -1,6 +1,7 @@
 import About from "../../Components/About/About";
 // import MyTabs from "../../Components/About/MyTabs/MyTabs";
 import Banner from "../../Components/Banner/Banner";
+import Hero from "../../Components/Banner/Hero";
 import Contact from "../../Components/Contact/Contact";
 import Resume from "../../Components/Resume/Resume";
 import Service from "../../Components/Service/Service";
@@ -8,9 +9,10 @@ import Service from "../../Components/Service/Service";
 const Home = () => {
   return (
     <div className="container mx-auto px-6 py-4">
+      <Hero />
       <Banner />
-      <Resume />
       <About />
+      <Resume />
       <Service />
       <Contact />
     </div>

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Radio, Tabs } from "antd";
-import Skills from "../Skills";
-import Experience from "../Experience";
-import Education from "../Education";
+import Skills from "../Skills/Skills";
+import Experience from "../Experience/Experience";
+import Education from "../Education/Education";
 const MyTabs = () => {
    const tabLabels = ["Skills", "Experience", "Education"];
   const [mode, setMode] = useState("top");
