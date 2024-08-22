@@ -10,10 +10,7 @@ const Contact = () => {
               className="absolute inset-0 border-none "
               frameBorder="0"
               title="map"
-              marginHeight="0"
-              marginWidth="0"
-              scrolling="no"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28911.550461359584!2d91.38333297438518!3d25.069893628722102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750daf49ba21823%3A0x3180c8d4ddeb5b9b!2sSunamganj!5e0!3m2!1sen!2sbd!4v1724336359905!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28911.550461359584!2d91.38333297438518!3d25.069893628722102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750daf49ba21823%3A0x3180c8d4ddeb5b9b!2sSunamganj!5e0!3m2!1sen!2sbd!4v1724336359905!5m2!1sen!2sbd" loading="lazy" 
               style={{ filter: "grayscale(1) contrast(1.2) opacity(0.4)" }}
             ></iframe>
             <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md w-full ">

@@ -1,16 +1,41 @@
+import { Typewriter } from "react-simple-typewriter";
+import banner from "/mohibullah-mohim-hero.jpg"
+
 const Hero = () => {
   return (
-    <div className="flex h-screen items-center justify-center bg-gray-900 p-5">
-      <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-10 md:px-10">
-        <div>
+    <div className="flex items-center justify-center bg-gray-900 p-5">
+      <div className="grid md:grid-cols-5 grid-cols-1 items-center gap-10 md:px-10">
+        <div className="md:col-span-3" >
           <h1 className="mb-2 text-3xl font-bold text-white">
-            <span className="text-green-500">Hi,</span> I'm Full Stack Developer
+            <span className="text-green-500">Hi, </span>I am Junior{" "}
+            <span className="text-red-700 font-bold">
+              {/* Style will be inherited from the parent element */}
+              <Typewriter
+                words={[
+                  "MERN Stack Developer",
+                  "Front End Developer",
+                  "Web Developer",
+                ]}
+                loop={Infinity}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </span>
           </h1>
-          <p className="mb-6 text-white">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
-            excepturi magnam enim officiis facilis numquam corporis quos
-            accusantium tempora, dolores quod cum facere architecto soluta atque
-            corrupti a alias perferendis.
+
+          <p className="my-6 leading-7 text-white">
+            I m a dedicated front-end developer with a knack for creating
+            dynamic and visually appealing web applications. With a strong
+            foundation in HTML, CSS, JavaScript and Next Js (js framework
+            React). I specialize in building responsive, user-friendly
+            interfaces. <br/>I thrive on turning design concepts into reality and
+            continuously learning about new technologies to enhance user
+            experience and dedicated to Frontend React Developer with a passion
+            for transforming complex problems into intuitive user interfaces
+            using Next js.
           </p>
           <div className="flex justify-center space-x-5">
             <button className="flex w-full items-center justify-center gap-1 rounded-2xl bg-rose-500 p-5 py-3 font-semibold text-white hover:bg-rose-700">
@@ -49,9 +74,9 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div>
+        <div className="md:col-span-2" >
           <img
-            src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src={banner}
             alt=""
             className="md:size-96 size-72 rounded-full "
           />
