@@ -1,20 +1,36 @@
-import { useState } from "react";
-
+import "./navbar.css";
+import { useEffect, useState } from "react";
 import logo from "../../assets/devmohib.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
   return (
-    <nav className="relative bg-white shadow dark:bg-gray-800">
+    <nav
+      className={`relative bg-white shadow dark:bg-gray-800 top-0 ${
+        isSticky ? "sticky-nav scrolled" : ""
+      }`}
+    >
       <div className="container px-6 py-4 mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
             <a href="#">
-              <img
-                className="w-auto h-6 sm:h-7"
-                src={logo}
-                alt="Logo"
-              />
+              <img className="w-auto h-6 sm:h-7" src={logo} alt="Logo" />
             </a>
 
             {/* Mobile menu button */}
