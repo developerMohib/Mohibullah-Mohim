@@ -1,5 +1,4 @@
 import About from "../../Components/About/About";
-// import MyTabs from "../../Components/About/MyTabs/MyTabs";
 import Banner from "../../Components/Banner/Banner";
 import Hero from "../../Components/Banner/Hero";
 import Contact from "../../Components/Contact/Contact";
