@@ -7,7 +7,9 @@ const Education = () => {
         mode="alternate"
         items={[
           {
-            children: "Create a services site 2015-09-01",
+            children: `2020 to present 
+            Higher Education 
+            I admitted on Mathemathics Depertment at 'Sunamganj Government College, Bangladesh' in June 2020 and now I'm studying there.`,
           },
           {
             children: "Solve initial network problems 2015-09-01",
