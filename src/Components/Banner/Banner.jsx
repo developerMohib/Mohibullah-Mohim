@@ -3,7 +3,7 @@ const { Text } = Typography;
 
 const Banner = () => {
   return (
-    <section className="text-black body-font">
+    <section id='#home' className="text-black body-font">
       <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center">
         <div className="lg:flex-grow flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <div>

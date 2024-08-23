@@ -1,11 +1,33 @@
+import Swal from "sweetalert2";
+
 const Contact = () => {
-  const handlesubmit = async (e) =>{
+  const handlesubmit = async (e) => {
     e.preventDefault();
-    const name = e.target.name.value ;
-    const email = e.target.email.value ;
-    const message = e.target.message.value ;
-    const userDetails = {name, email, message}
-  }
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const message = e.target.message.value;
+    e.target.reset();
+    const userData = { name, email, message };
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Success! Your message has been sent.",
+      showConfirmButton: false,
+      timer: 1500
+    });
+    try {
+      const response = await fetch(`${import.meta.env.VITE_baseURL}/contact`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userData),
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <>
       <section className="text-gray-600 body-font relative">

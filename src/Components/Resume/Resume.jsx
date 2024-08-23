@@ -3,17 +3,22 @@ import { Done_work } from "../../utils/doneWork";
 import { ImSpinner9 } from "react-icons/im";
 import { useState } from "react";
 
-console.log("done eork", Done_work);
 const Resume = () => {
-  const [loading,setLoading]=useState(false);
+  const [loading, setLoading] = useState(false);
+
+  // Function to handle "Load More" button click
+  const handleLoadMore = () => {
+    setLoading(true);
+  };
+
   return (
     <>
       <div className="md:grid grid-cols-3 gap-4">
         {Done_work?.slice(0, 3).map((work, index) => (
-          <div className="grid-cols-1" key={index}>
-            <a href="#" className="group relative block bg-black">
+          <div className="grid-cols-1" key={work.id || index}>
+            <Link to="#" className="group relative block bg-black">
               <img
-                alt=""
+                alt={work.projectName || "Project image"}
                 src={work.Image}
                 className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
               />
@@ -36,14 +41,16 @@ const Resume = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
-        ))}        
+        ))}
       </div>
-  
-      <div className="text-center my-5 ">
-          <button> {loading ? <ImSpinner9 className="animate-spin"/> : 'Load More'} </button>
-        </div>
+
+      <div className="text-center my-5">
+        <button onClick={handleLoadMore}>
+          {loading ? <ImSpinner9 className="animate-spin" /> : 'Load More'}
+        </button>
+      </div>
     </>
   );
 };

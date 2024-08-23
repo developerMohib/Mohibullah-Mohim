@@ -30,9 +30,9 @@ const Navbar = () => {
       <div className="container px-6 py-4 mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
-            <a href="#">
+            <Link to="/">
               <img className="w-auto h-6 sm:h-7" src={logo} alt="Logo" />
-            </a>
+            </Link>
 
             {/* Mobile menu button */}
             <div className="flex lg:hidden">
