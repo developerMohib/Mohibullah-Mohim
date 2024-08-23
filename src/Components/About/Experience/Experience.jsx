@@ -8,10 +8,10 @@ const Experience = () => {
         mode="alternate"
         items={[
           {
-            children: "Create a services site 2015-09-01",
+            children: "Front End Development with React, Next, Typescript",
           },
           {
-            children: "Solve initial network problems 2015-09-01",
+            children: "Beck End Development Node, Express, and Nessesary technical thing",
             color: "green",
           },
           {
@@ -22,14 +22,14 @@ const Experience = () => {
                 }}
               />
             ),
-            children: `Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.`,
+            children: `For Authentication, use Firebase and For Database, use MongoDB`,
           },
           {
             color: "red",
-            children: "Network problems being solved 2015-09-01",
+            children: "Tailwind, Bootstrap, DaisyUi, Metarial Ui, Ant Design, Framer Motion",
           },
           {
-            children: "Create a services site 2015-09-01",
+            children: "If nessesay use Technical other thing",
           },
           {
             dot: (
@@ -39,7 +39,7 @@ const Experience = () => {
                 }}
               />
             ),
-            children: "Technical testing 2015-09-01",
+            children: "I have completed multiple web application with using this, Please check out my github",
           },
         ]}
       />

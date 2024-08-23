@@ -1,4 +1,4 @@
-import { FaLinkedin, FaFacebook, FaGithub, FaTwitter } from "react-icons/fa";
+
 export const Skill_data = [
     {
       skill_name: "Html 5",
@@ -62,28 +62,7 @@ export const Skill_data = [
     },
   
   ];
-  
-//   export const Socials = [
-//     {
-//       name: "Linkedin",
-//       icon: <FaLinkedin />
-//     },
-//     {
-//       name: "Facebook",
-//       icon: <FaFacebook />
-//     },
-//     {
-//       name: "Github",
-//       icon: <FaGithub />
-//     },
-//     {
-//       name: "Twitter",
-//       icon: <FaTwitter />
-//     },
-//   ];
-  
-  
-  
+    
   export const Frontend_skill = [
     {
       skill_name: "Html 5",

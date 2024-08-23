@@ -6,12 +6,6 @@ import {
   slideInFromTop,
 } from "../../../utils/motion";
 
-// import {
-//   Backend_skill,
-//   Frontend_skill,
-//   Design,
-//   Skill_data,
-// } from "../skillsList";
 import SkillCard from "./SkillCard";
 import { Backend_skill, Design, Frontend_skill, Skill_data } from "../../../utils/skilldata";
 
