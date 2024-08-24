@@ -1,6 +1,7 @@
 import About from "../../Components/About/About";
 import Banner from "../../Components/Banner/Banner";
 import Hero from "../../Components/Banner/Hero";
+import BeckToTop from "../../Components/BeckToTop/BeckToTop";
 import Contact from "../../Components/Contact/Contact";
 import Resume from "../../Components/Resume/Resume";
 import Service from "../../Components/Service/Service";
@@ -14,6 +15,7 @@ const Home = () => {
       <Resume />
       <Service />
       <Contact />
+      <BeckToTop />
     </div>
   );
 };

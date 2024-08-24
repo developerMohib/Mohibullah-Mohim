@@ -41,10 +41,10 @@ const Hero = () => {
           </p>
           <div className="flex justify-center space-x-5">
             <button className="flex w-full items-center justify-center gap-1 rounded-2xl bg-rose-500 p-5 py-3 font-semibold text-white hover:bg-rose-700">
-              Hire Me <IoMdHeartEmpty className="h-6 w-6"/>
+              Hire Me <IoMdHeartEmpty className="h-6 w-6 animate-ping"/>
             </button>
             <button className="flex w-full items-center justify-center gap-2 rounded-2xl bg-white hover:bg-gray-300 p-5 py-3 font-semibold">
-              Resume <FiDownload className="h-6 w-6" />
+              Resume <FiDownload className="h-6 w-6 animate-bounce" />
             </button>
           </div>
         </div>
