@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-const SkillCard = ({index ,src, width,height}) => {
-    const { ref, inView } = useInView({
-        triggerOnce: true,
-      });
-      const imageVariants = {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1 },
-      };
-      const animationDelay = 0.3;
-    return (
-        <motion.div
+const SkillCard = ({ index, src, width, height }) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+  const imageVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+  const animationDelay = 0.3;
+  return (
+    <motion.div
       ref={ref}
       initial="hidden"
       variants={imageVariants}
@@ -21,7 +21,7 @@ const SkillCard = ({index ,src, width,height}) => {
     >
       <img src={src} width={width} height={height} alt="skill image" />
     </motion.div>
-    );
+  );
 };
 
 export default SkillCard;

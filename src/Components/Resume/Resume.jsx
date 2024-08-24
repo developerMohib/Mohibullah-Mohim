@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { Done_work } from "../../utils/doneWork";
 import { ImSpinner9 } from "react-icons/im";
 import { useState } from "react";
+import { Typography } from "antd";
+const { Text } = Typography;
 
 const Resume = () => {
   const [loading, setLoading] = useState(false);
@@ -13,10 +15,10 @@ const Resume = () => {
 
   return (
     <>
-      <div className="md:grid grid-cols-3 gap-4">
+      <div data-aos="fade-up" data-aos-duration="3000" className="md:grid grid-cols-3 gap-4">
         {Done_work?.slice(0, 3).map((work, index) => (
           <div className="grid-cols-1" key={work.id || index}>
-            <Link to="#" className="group relative block bg-black">
+            <Link to="#" className="group relative block bg-black my-5 ">
               <img
                 alt={work.projectName || "Project image"}
                 src={work.Image}
@@ -32,7 +34,9 @@ const Resume = () => {
                   to={work.sourceCode}
                   className="text-xl font-bold text-white sm:text-2xl"
                 >
-                  Source Code
+                  <Text style={{ color: "white", fontSize: "24px", backgroundColor: "black" }} code>
+                    Source Code
+                  </Text>
                 </Link>
 
                 <div className="mt-32 sm:mt-48 lg:mt-64">
@@ -48,7 +52,7 @@ const Resume = () => {
 
       <div className="text-center my-5">
         <button onClick={handleLoadMore}>
-          {loading ? <ImSpinner9 className="animate-spin" /> : 'Load More'}
+          {loading ? <ImSpinner9 className="animate-spin" /> : "Load More"}
         </button>
       </div>
     </>

@@ -7,20 +7,26 @@ import {
 } from "../../../utils/motion";
 
 import SkillCard from "./SkillCard";
-import { Backend_skill, Design, Frontend_skill, Skill_data } from "../../../utils/skilldata";
+import {
+  Backend_skill,
+  Design,
+  Frontend_skill,
+  Skill_data,
+} from "../../../utils/skilldata";
+
 
 const Skills = () => {
   return (
     <>
-      <section className="">
+      <section >
         <div className="w-full h-auto flex flex-col items-center justify-center">
           <motion.div
             variants={slideInFromTop}
-            className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+            className="Welcome-box py-[8px] px-2 border border-[#7042f88b] opacity-[0.9]"
           >
-            <GiLaserSparks className="text-[#b49bff] mr-[10px] h-5 w-5" />
+            <GiLaserSparks className="text-[#b49bff] mx-auto animate-spin-slow h-5 w-5" />
             <h1 className="Welcome-text text-[13px]">
-              Think better with Next js 14
+              Think better with React world 
             </h1>
           </motion.div>
           <motion.div
@@ -44,7 +50,7 @@ const Skills = () => {
         className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-28"
         style={{ transform: "scale(0.9" }}
       >
-        <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+        <div className="flex flex-row justify-around flex-wrap mt-4 md:gap-5 items-center">
           {Skill_data.map((image, index) => (
             <SkillCard
               key={index}
@@ -56,7 +62,7 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+        <div className="flex flex-row justify-around flex-wrap mt-4 md:gap-5 items-center">
           {Frontend_skill.map((image, index) => (
             <SkillCard
               key={index}
@@ -67,7 +73,7 @@ const Skills = () => {
             />
           ))}
         </div>
-        <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
+        <div className="flex flex-row justify-around flex-wrap mt-4 md:gap-5 items-center">
           {Backend_skill.map((image, index) => (
             <SkillCard
               key={index}
@@ -88,7 +94,7 @@ const Skills = () => {
               index={index}
             />
           ))}
-        </div>        
+        </div>
       </section>
     </>
   );

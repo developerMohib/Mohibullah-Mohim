@@ -2,7 +2,7 @@ import MyTabs from "./MyTabs/MyTabs";
 
 const About = () => {
   return (
-    <div id="#about" >
+    <div id="about" className="md:my-0 mt-20" >
         <MyTabs />
     </div>
   );

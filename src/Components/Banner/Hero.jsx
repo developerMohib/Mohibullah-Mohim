@@ -5,7 +5,7 @@ import { FiDownload } from "react-icons/fi";
 
 const Hero = () => {
   return (
-    <div className="flex items-center justify-center bg-gray-900 p-5">
+    <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" className="flex items-center justify-center bg-gray-900 p-5">
       <div className="grid md:grid-cols-5 grid-cols-1 items-center gap-10 md:px-10">
         <div className="md:col-span-3" >
           <h1 className="mb-2 text-3xl font-bold text-white">
@@ -48,7 +48,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="md:col-span-2" >
+        <div className="md:col-span-2 mx-auto" >
           <img
             src={banner}
             alt=""

@@ -91,7 +91,7 @@ const Footer = () => {
             />
           </Link>
 
-          <div className="flex items-center -mx-2">
+          <div className="flex items-center mr-3">
             <Link
               to="https://www.linkedin.com/in/mohibullah-mohim"
               target="_blank"

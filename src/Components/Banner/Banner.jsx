@@ -4,14 +4,15 @@ import { FaArrowDown } from "react-icons/fa6";
 
 const Banner = () => {
   return (
-    <section id="#home" className="text-black body-font relative">
+    <section id="#home" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" className="text-black body-font relative">
       <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center">
         <div className="lg:flex-grow flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <div>
-            <span className="">
-              <img className="animate-spin w-8" src="/graphql.png" alt="" />
+            <span className="flex justify-between">
+              <img className="animate-spin-slow w-8" src="/graphql.png" alt="" />
+              <img className="animate-spin w-8" src="/redux.png" alt="" />
             </span>
-            <Text code>
+            <Text data-aos='fade-up' data-aos-duration="2000" code>
               Your new idea will make me a happy. So keep rocking !
             </Text>
           </div>
@@ -23,19 +24,19 @@ const Banner = () => {
             learning new update thing day to day. i think a developer has no
             limit to learn new thing.
           </p>
-          <div className="flex justify-center">
+          <div data-aos="fade-right" className="flex justify-center">
             <button className="inline-flex text-white bg-blue-500 py-2 px-4 focus:outline-none hover:bg-opacity-80 rounded text-sm">
               Book a demo
             </button>
           </div>
         </div>
-        <div
+        <div data-aos="fade-up-left"
           id="pattern"
           className="w-32 sm:w-40 lg:max-w-xl lg:w-full md:w-32 xl:w-5/6 bg-contain bg-no-repeat md:ml-40 xl:mr-16"
         >
           <div className="w-full flex gap-3 justify-center items-center my-10">
             <img
-              className="h-20 w-auto rounded-xl animate-spin"
+              className="h-20 w-auto rounded-xl animate-spin-slow"
               alt="react logo"
               src="/react.png"
             />
@@ -94,7 +95,7 @@ const Banner = () => {
           </div>
         </div>
       </div>      
-      <button className="border border-slate-400 p-5 rounded-full bottom-0 hover:bg-orange-500 animate-bounce left-1/2 absolute"> <FaArrowDown/> </button>
+      <button className="border border-slate-400 p-5 rounded-full hover:bg-orange-500 animate-bounce absolute left-1/2 md:bottom-0 -bottom-5-5"> <FaArrowDown/> </button>
     </section>
   );
 };
