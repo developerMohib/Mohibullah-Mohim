@@ -15,7 +15,12 @@ const Resume = () => {
 
   return (
     <>
-      <div data-aos="fade-up" data-aos-duration="3000" className="md:grid grid-cols-3 gap-4">
+      <div
+        id="project"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        className="md:grid grid-cols-3 gap-4"
+      >
         {Done_work?.slice(0, 3).map((work, index) => (
           <div className="grid-cols-1" key={work.id || index}>
             <div className="group relative block bg-black my-5 ">
@@ -34,7 +39,14 @@ const Resume = () => {
                   to={work.sourceCode}
                   className="text-xl font-bold text-white sm:text-2xl"
                 >
-                  <Text style={{ color: "white", fontSize: "24px", backgroundColor: "black" }} code>
+                  <Text
+                    style={{
+                      color: "white",
+                      fontSize: "24px",
+                      backgroundColor: "black",
+                    }}
+                    code
+                  >
                     Source Code
                   </Text>
                 </Link>

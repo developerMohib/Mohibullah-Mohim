@@ -1,17 +1,17 @@
-import HeadingParalox from "../HeadingParalox/HeadingParalox";
+import { useParallax } from "react-scroll-parallax";
 
 const Service = () => {
-
+  const parallax = useParallax<HTMLDivElement>({
+    rotate: [0, 360],
+  });
   return (
-    <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
-      
-      <HeadingParalox />
+    <div id="service" className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
 
       <h2 className="font-headline text-2xl font-semibold sm:text-3xl text-center">
         Revamp Your Website in Three Steps
       </h2>
 
-      <div className="grid sm:grid-cols-3 gap-16 sm:gap-8 mt-16 sm:mt-24">
+      <div ref={parallax.ref} className="grid sm:grid-cols-3 gap-16 sm:gap-8 mt-16 sm:mt-24">
         <div className="text-center">
           <div className="relative w-20 h-20 sm:w-28 sm:h-28 lg:w-32 lg:h-32 mx-auto left-2">
             <div className="z-10 relative w-full h-full bg-white rounded-full border border-gray-300 shadow flex items-center justify-center">

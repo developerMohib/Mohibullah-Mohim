@@ -2,10 +2,12 @@ import { Typewriter } from "react-simple-typewriter";
 import banner from "/mohibullah-mohim-hero.jpg";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { FiDownload } from "react-icons/fi";
+import { NavHashLink } from "react-router-hash-link";
 
 const Hero = () => {
+
   return (
-    <div
+    <div id="home"
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-anchor-placement="center-bottom"
@@ -45,9 +47,9 @@ const Hero = () => {
             using Next js.
           </p>
           <div className="flex justify-center space-x-5">
-            <button className="flex w-full items-center justify-center gap-1 rounded-2xl bg-rose-500 p-5 py-3 font-semibold text-white hover:bg-rose-700">
+          <NavHashLink to="/#contact" smooth className="flex w-full items-center justify-center gap-1 rounded-2xl bg-rose-500 p-5 py-3 font-semibold text-white hover:bg-rose-700">
               Hire Me <IoMdHeartEmpty className="h-6 w-6 animate-ping" />
-            </button>
+            </NavHashLink>
             <a
               className="flex w-full items-center justify-center gap-2 rounded-2xl bg-white hover:bg-gray-300 p-5 py-3 font-semibold"
               href="https://drive.google.com/uc?export=download&id=1mddJnRMxpfGIffMp8qN6TwEihNgXQlH0"

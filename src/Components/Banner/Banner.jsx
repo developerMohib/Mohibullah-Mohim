@@ -47,7 +47,6 @@ const Banner = () => {
     const message = e.target.message.value;
     e.target.reset();
     const userData = { name, email, message };
-    console.log('user data', userData)
     Swal.fire({
       position: "center",
       icon: "success",
@@ -71,7 +70,6 @@ const Banner = () => {
 
   return (
     <section
-      id="#home"
       data-aos="fade-up"
       data-aos-duration="1000"
       data-aos-anchor-placement="center-bottom"
@@ -187,7 +185,10 @@ const Banner = () => {
                     </div>
                     {/* Message Part Start */}
                     <div className="flex items-center justify-start w-full">
-                      <button type="submit" className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-8 py-2 text-sm">
+                      <button
+                        type="submit"
+                        className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-8 py-2 text-sm"
+                      >
                         Submit
                       </button>
                       <button

@@ -10,7 +10,8 @@ const Education = () => {
           children: ` 2020 to Present, Higher Education, I was admitted to the Mathematics Department at 'Sunamganj Government College, Bangladesh' in June 2020, and I am currently studying there.`,
         },
         {
-          children: "In the other hand, june 2024, I completed my web design and development course from Programing Hero",
+          children:
+            "In the other hand, june 2024, I completed my web design and development course from Programing Hero",
           color: "green",
         },
         {
@@ -25,10 +26,12 @@ const Education = () => {
         },
         {
           color: "red",
-          children: "january 2020 to August 2020, I have completed Basic computer and self thought",
+          children:
+            "january 2020 to August 2020, I have completed Basic computer and self thought",
         },
         {
-          children: "2012 to 2017, Secondary Education, I admitted on class six at 'Government Jubilee high School, Sunamganj' in 2012 and studied there till class Ten (2017).",
+          children:
+            "2012 to 2017, Secondary Education, I admitted on class six at 'Government Jubilee high School, Sunamganj' in 2012 and studied there till class Ten (2017).",
         },
         {
           dot: (
@@ -38,7 +41,8 @@ const Education = () => {
               }}
             />
           ),
-          children: "To keep update myself, i always learn technical new something after completed basic computer",
+          children:
+            "To keep update myself, i always learn technical new something after completed basic computer",
         },
       ]}
     />

@@ -1,4 +1,3 @@
-import { ParallaxProvider } from "react-scroll-parallax";
 import Footer from "../Components/Footer/Footer";
 import Navbar from "../Components/Navbar/Navbar";
 import Preloader from "../Components/Preloader/Preloader";
@@ -9,12 +8,12 @@ AOS.init();
 
 const Layout = () => {
   return (
-    <ParallaxProvider>
+    <div>
       <Preloader />
       <Navbar />
       <Home />
       <Footer />
-    </ParallaxProvider>
+    </div>
   );
 };
 

@@ -15,10 +15,9 @@ import {
 } from "../../../utils/skilldata";
 
 const Skills = () => {
-
   return (
     <>
-      <section >
+      <section>
         <div className="w-full h-auto flex flex-col items-center justify-center">
           <motion.div
             variants={slideInFromTop}
@@ -26,7 +25,7 @@ const Skills = () => {
           >
             <GiLaserSparks className="text-[#b49bff] mx-auto animate-spin-slow h-5 w-5" />
             <h1 className="Welcome-text text-[13px]">
-              Think better with React world 
+              Think better with React world
             </h1>
           </motion.div>
           <motion.div
