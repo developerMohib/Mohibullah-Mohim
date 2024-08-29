@@ -1,6 +1,12 @@
+import HeadingParalox from "../HeadingParalox/HeadingParalox";
+
 const Service = () => {
+
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8">
+      
+      <HeadingParalox />
+
       <h2 className="font-headline text-2xl font-semibold sm:text-3xl text-center">
         Revamp Your Website in Three Steps
       </h2>

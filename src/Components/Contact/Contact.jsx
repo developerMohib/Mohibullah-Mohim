@@ -16,7 +16,7 @@ const Contact = () => {
       timer: 1500
     });
     try {
-      const response = await fetch(`${import.meta.env.VITE_baseURL}/contact`, {
+      await fetch(`${import.meta.env.VITE_baseURL}/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -112,7 +112,7 @@ const Contact = () => {
                   htmlFor="message"
                   className="leading-7 text-sm text-gray-600"
                 >
-                  Message
+                  Your Query
                 </label>
                 <textarea
                   id="message"

@@ -18,7 +18,7 @@ const Resume = () => {
       <div data-aos="fade-up" data-aos-duration="3000" className="md:grid grid-cols-3 gap-4">
         {Done_work?.slice(0, 3).map((work, index) => (
           <div className="grid-cols-1" key={work.id || index}>
-            <Link to="#" className="group relative block bg-black my-5 ">
+            <div className="group relative block bg-black my-5 ">
               <img
                 alt={work.projectName || "Project image"}
                 src={work.Image}
@@ -45,7 +45,7 @@ const Resume = () => {
                   </div>
                 </div>
               </div>
-            </Link>
+            </div>
           </div>
         ))}
       </div>

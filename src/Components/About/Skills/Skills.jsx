@@ -14,8 +14,8 @@ import {
   Skill_data,
 } from "../../../utils/skilldata";
 
-
 const Skills = () => {
+
   return (
     <>
       <section >

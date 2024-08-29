@@ -57,11 +57,10 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div data-aos="fade-left"
-      data-aos-duration="1000" className="md:col-span-2 mx-auto">
+        <div className="md:col-span-2 mx-auto">
           <img
             src={banner}
-            alt=""
+            alt="Mohibullah Mohim"
             className="md:size-96 size-72 rounded-full "
           />
         </div>
