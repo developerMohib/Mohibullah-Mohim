@@ -132,7 +132,7 @@ const Navbar = () => {
             </div>
 
             <div className="flex items-center mt-4 lg:mt-0">
-              <button onclick={handleBtn}
+              <button onClick={handleBtn}
                 className="hidden items-center mx-4 text-gray-600 transition-colors duration-300 transform lg:block dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-400 focus:text-gray-700 dark:focus:text-gray-400 focus:outline-none"
               >
                 <BsUniversalAccessCircle className="text-3xl" />                
